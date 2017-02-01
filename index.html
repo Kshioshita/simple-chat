@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Simple Chat</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="chat.css">
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+
+<!-- 		<script type="text/javascript">
+		
+			// create socket connection
+			var socket = io.connect();
+			
+			
+			// gives feedback when connection is established
+			socket.on('connect', function() {
+				// prints to browser console log, console log on server side prints to command line
+				console.log("Connected");
+			});
+
+			// Receive from any event - this is received from the server's broadcast.emit
+			socket.on('chatmessage', function (data) {
+				console.log(data);
+				document.getElementById('messages').innerHTML = "" + data + 
+ + "" + document.getElementById('messages').innerHTML;
+			});
+			
+			var sendmessage = function(message) {
+				// print to browser console the envent that's happening
+				console.log("chatmessage: " + message);
+				// emit this event to the server
+				socket.emit('chatmessage', message);
+				var form=document.getElementById("myForm");
+				form.reset();
+			};
+
+	
+		</script>	 -->
+	</head>
+ <body id="main">
+ <!-- USE ids to connect javascript ad html -->
+ <div id="messages">
+ <!-- No Messages Yet -->
+ </div>
+ <form id="myForm"><input type="text" id="message" name="message"></form>
+ <input type="submit" value="submit" class="button" onclick="sendmessage(document.getElementById('message').value);">
+ <script type="text/javascript" src=chat.js></script>
+ </body>
+</html>

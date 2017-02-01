@@ -1,0 +1,23 @@
+input[type=text]{
+	box-sizing: border-box;
+	padding: 10px;
+	border-radius: 4px;
+	border-color: black; /*#d2d2d8;*/
+	border-style: dotted;
+	border-width: thin;
+	/*color:white;*/
+}
+
+.button{
+	border: none;
+	padding: 5px;
+	text-align: center;
+	font-size: .75em;
+	border-radius: 4px;
+	display: none;
+}
+
+body{
+	text-align: center;
+	font-family: 'Cabin Sketch', cursive;
+}
